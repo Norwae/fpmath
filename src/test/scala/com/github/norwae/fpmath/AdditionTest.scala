@@ -1,7 +1,7 @@
 package com.github.norwae.fpmath
 
 import com.github.norwae.fpmath.fp.FPInteger
-import com.github.norwae.fpmath.typelevel.Nat.{One, Succ, Zero}
+import com.github.norwae.fpmath.typelevel.Integral.{One, Zero}
 import org.scalatest.{FlatSpec, Matchers}
 
 class AdditionTest extends FlatSpec with Matchers {

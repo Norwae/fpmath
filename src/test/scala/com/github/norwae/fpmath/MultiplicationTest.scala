@@ -1,11 +1,12 @@
 package com.github.norwae.fpmath
 
 import com.github.norwae.fpmath.fp.FPInteger
-import com.github.norwae.fpmath.typelevel.Nat.{One, Succ, Zero}
+import com.github.norwae.fpmath.typelevel.Integral.{One, Succ, Zero}
 import org.scalatest.{FlatSpec, Matchers}
 
 class MultiplicationTest extends FlatSpec with Matchers {
   type Two = Succ[One]
+
   "Multiplying fp numbers" should "work on plain numbers" in {
     val f0: FPInteger[Zero] = 7
     val f1: FPInteger[Zero] = 3

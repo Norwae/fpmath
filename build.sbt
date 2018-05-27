@@ -11,4 +11,4 @@ libraryDependencies ++= Seq(
   "org.scala-lang" % "scala-reflect" % scalaVersion.value
 )
 
-scalaVersion := "2.12.5"
+scalaVersion := "2.12.6"
