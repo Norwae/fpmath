@@ -21,6 +21,9 @@ class FPInteger[N <: Integral](val value: Int) extends AnyVal {
     new FPInteger[N2](if (factor < 0) value / -factor else value * factor)
   }
 
+
+  override def toString: String = value.toString
+
   def doubleValue(implicit conv: Converter[Zero, N]): Double = {
     val factor = conv.scaleFactor match {
       case 0 ⇒ throw new ArithmeticException("Cannot convert to double")
