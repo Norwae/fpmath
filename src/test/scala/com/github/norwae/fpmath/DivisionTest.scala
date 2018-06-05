@@ -14,21 +14,21 @@ class DivisionTest extends FlatSpec with Matchers {
     f0 / f1 shouldEqual FPInteger[Zero](7)
   }
 
-  it should "work on  fp * scalar" in {
+  it should "work on  fp / scalar" in {
     val f0 = FPInteger[One](210)
     val f1 = 3
 
     f0 / f1 shouldEqual FPInteger[One](70)
   }
 
-  it should "work on fp * fp (homogenous)" in {
+  it should "work on fp / fp (homogenous)" in {
     val f0 = FPInteger[One](210)
     val f1 = FPInteger[One](30)
 
     f0 / f1 shouldEqual FPInteger[Zero](7)
   }
 
-  it should "work on fp * fp (heterogenous)" in {
+  it should "work on fp / fp (heterogenous)" in {
     val f0 = FPInteger[One](2100)
     val f1 = FPInteger[Two](300)
 
